@@ -1,0 +1,24 @@
+<div class="post wow fadeInUp" data-wow-duration="0.5s">
+  <div class="row">
+    <div class=" post-content twelve columns">
+      <a href="{{ post.url }}">
+        <h2>{{ post.title }}</h2>
+      </a>
+      <div class="post-testing">
+        <h5 class = "date"> {{ post.date | date: '%B %d, %Y' }} </h5>
+        <div>
+          {% for tag in post.tags %}
+            <h5 class="tags">{{ tag | prepend: "/"}}</h5>
+            <!-- <h5 class="tags">{{ post.tags[tag]| append: ", "}}</h5> -->
+          {% endfor %}
+          <!-- <h5 class="tags">{{ post.tags | array_to_sentence_string  }}</h5> -->
+        </div>
+      </div>
+    </div>
+      <!-- <div class=" post-image six columns">
+            <a href="{{post.url}}">
+                <img src="{{post.beat_image_path}}" alt="{{ post.hero-image.title }}">
+            </a>
+        </div> -->
+    </div>
+</div>

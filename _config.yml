@@ -1,0 +1,27 @@
+# Site settings
+title: Greg Allison | Blog
+name: "Greg Allison"
+author: "Greg Allison"
+tagline: "Designer of sorts"
+email: greg.allison95@gmail.com
+description: "Greg Allison's Blog"
+baseurl: ""
+url: "https://gea4.github.io"
+dribbble: gea4
+tumblr: greg-allison.tumblr.com
+github_username:  gea4
+permalink: /:tag/:title/
+
+# Build settings
+markdown: kramdown
+#theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+# Sass
+sass:
+    sass_dir: _sass
+    style: expanded

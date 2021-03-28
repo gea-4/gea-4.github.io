@@ -1,0 +1,20 @@
+<!DOCTYPE html> 
+<html lang="en-us">
+    
+    {% include head.html %}
+    
+    <body>
+        <div class="container">
+            
+            {% include nav.html %}
+
+            <div class="content">
+                
+                {% for post in site.posts %}
+                    {% include post.html %}
+                {% endfor %}
+                
+            </div>
+        </div>
+    </body>
+</html>

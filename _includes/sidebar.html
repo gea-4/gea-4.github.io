@@ -1,0 +1,19 @@
+<div class="sidebar wow fadeIn" data-wow-duration="1s">
+    <div class="sidebar-about">
+        <h3>{{site.author}}</h3>
+        <h4> {{site.tagline}}</h4>
+        <div class="social-icons">
+            <a href="https://www.gea4.github.io" ><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+            <a href="https://dribbble.com/gea4"><i class="fa fa-dribbble fa-3x" aria-hidden="true"></i></a>
+            <a href="mailto:gea4@rice.edu"><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <div class="post-about">
+        <h5 class="date">{{ page.date | date: '%B %d, %Y' }}</h5>
+        <div class=tags>
+            {% for tag in page.tags %}
+            <h5>/&nbsp;<a href="#">{{ tag }}&nbsp;</a></h5>
+            {% endfor %}
+        </div>
+    </div>
+</div>

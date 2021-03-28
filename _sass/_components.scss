@@ -1,0 +1,177 @@
+/* Nav
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.nav {
+    padding-top: 5rem;
+    text-align: right;
+    border-bottom: 1px solid $red;
+}
+.nav-post {
+    padding-top: 5rem;
+    border-bottom: 1px solid $primary-color;
+}
+.nav-post h2 {
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+.nav-title {
+    margin-top:0;
+    padding-right: 1rem;
+    float: left;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: $red;
+    font-weight: $black;
+}
+.nav-sub {
+    float: left;
+    margin-top: 0.5rem;
+}
+.nav-right {
+    margin-top:0.7rem;
+    color: $red;
+    // font-weight: 200;
+}
+
+.nav:after {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 1px;
+    margin: .75rem auto;
+}
+
+/* Posts
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.post {
+    border-bottom: 1px solid $primary-color;
+
+    h3 {
+        margin-top: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+    h3:last-of-type {
+        margin-bottom: 1.6rem;
+    }
+}
+.post {
+    // border-bottom-color: $red;
+    // transition: border-color .3s ease;
+    h2:first-of-type:hover {
+        color:$red;
+        transition: all .1s ease-out;
+    }
+    // h5{
+    //   color: $red;
+    // }
+    // div{div{div{h5: {color: $red}}}}
+}
+.post-content {
+    margin-bottom: 1rem;
+    // h5:first-of-type {
+    //     margin-top: 0rem;
+    //     // text-transform: uppercase;
+    //     font-size: 16px;
+    // }
+    .tags {
+        font-weight: $thin;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 1px;
+        color: $secondary-color;
+        line-height: 1.6;
+        margin-left: 0.8rem;
+      }
+    .post-testing {
+      display: flex;
+      justify-content: space-between;
+      // justify-content: first baseline;
+      align-items: baseline;
+      div {
+        display: flex;
+        // :after {
+        //   margin-left: 0.2rem;
+        // }
+      }
+      .date {
+        size: 16px;
+      }
+      h5:hover {
+        color: $red;
+        text-decoration: underline;
+        transition: all 0.3s ease;
+      }
+    }
+}
+.post-image {
+    float:right;
+    margin-bottom: 2rem;
+
+}
+.caption {
+    margin-bottom: 0;
+    margin-top: 1rem;
+    font-style: italic;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $red;
+    margin-bottom: 3rem;
+}
+.post::before{
+    content: "";
+    display: block;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+
+/* Sidebar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.side-barcontainer {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    text-align: right;
+}
+.sidebar-about {
+    position: relative;
+    top: 15.5rem;
+    left: 8rem;
+
+    h3 {
+        margin-bottom: 0.5rem;
+    }
+}
+.social-icons {
+    display: inline-block;
+    margin-top: 1rem;
+    i {
+        margin-right: 1rem;
+    }
+}
+.post-about {
+    @extend .sidebar-about;
+    .date {
+        margin-top: 6rem;
+        margin-bottom: 4rem;
+    }
+    h5 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+.tags {
+    h5 {
+        color: $red;
+        font-weight: $thin;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 1.6;
+    }
+}
